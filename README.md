@@ -5,4 +5,4 @@ LightHCG: a Lightweight yet powerful HSIC Disentanglement based Causal Glaucoma 
 
 #### D, Kim(2025), "LightHCG: a Lightweight yet powerful HSIC Disentanglement based Causal Glaucoma Detection Model framework", arXiv:2512.02437, pp. 1-11.
 
-*For more specific information, please refer to the manuscript in arXiv:2512.02437
+*For more specific information, please refer to the manuscript in [arXiv:2512.02437](https://arxiv.org/abs/2512.02437)
