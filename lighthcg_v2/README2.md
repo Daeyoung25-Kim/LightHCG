@@ -12,7 +12,7 @@ Kim, D. (2025). LightHCG: a Lightweight yet powerful HSIC Disentanglement based 
 
 ## Summary
 
-This is the source code of LightHCG_v2, which incorporates a different downstream model definition approach with updated tensorflow packages. (Few changes also applied in hyperparameter settings within the original LightHCG training framework considering environmental changes in tensorflow package). While the first approach (LightHCG_v1) used latent causal representations: Z2 itself for downstream classification, the new version considers uncertainty of latent causal factors by using both $\mu$ and $\sigma$ vectors linked to Z2. Using 6 input features, the new downstream model (LightHCG encoder + DNN) achieved even higher performance in glaucoma detection (AUC score: 98.57%) with extremely less parameter usage (ACRIMA dataset). Below Figures and Tables provide a visual summary of results from LightHCG_v2 ((I) quantitative, qualitative evaluations of latent causal representation learning results, (II) downstream model performance in glaucoma detection).
+This is the source code of LightHCG_v2, which incorporates a different downstream model definition approach with updated tensorflow packages. (Few changes also applied in hyperparameter settings within the original LightHCG training framework considering environmental changes in tensorflow package). While the first approach (LightHCG_v1) used latent causal representations: Z<sub>2</sub> itself for downstream classification, the new version considers uncertainty of latent causal factors by using both $\mu$ and $\sigma$ vectors linked to Z<sub>2</sub>. Using 6 input features, the new downstream model (LightHCG encoder + DNN) achieved even higher performance in glaucoma detection (AUC score: 98.57%) with extremely less parameter usage (ACRIMA dataset). Below Figures and Tables provide a visual summary of results from LightHCG_v2 ((I) quantitative, qualitative evaluations of latent causal representation learning results, (II) downstream model performance in glaucoma detection).
 
 <p align="center">
   <img width="467" height="382" alt="image" src="https://github.com/user-attachments/assets/91916825-b006-4f2e-9da0-5e1d417ea62c" />
@@ -27,7 +27,7 @@ This is the source code of LightHCG_v2, which incorporates a different downstrea
 </p>
 
 
-*When varying individual latent causal features in Z2 latent space, one-to-one correspondence to neuroretinal rim (Z2,0) and optic cup (Z2,2) was clearly visible, whereas abnormal vessel correspondence was relatively hard to identify in Z2,1. Considering both SHD metrics and visual disentanglement check results, LightHCG_v2 was found to extract and disentangle valid causal representations of the underlying causal (physical) mechanisms of glaucoma progression.
+*When varying individual latent causal features in Z<sub>2</sub> latent space, one-to-one correspondence with neuroretinal rim (Z<sub>2,0</sub>) and optic cup (Z<sub>2,2</sub>) was clearly visible, whereas abnormal vessel correspondence was relatively hard to identify in Z<sub>2,1</sub> variation results. Considering both SHD metrics and visual disentanglement check results, LightHCG_v2 was found to extract and disentangle valid causal representations of the underlying causal (physical) mechanisms of glaucoma progression.
 
 <p align="center">
   <img width="1170" height="612" alt="image" src="https://github.com/user-attachments/assets/e853f765-cf9c-4fd1-885e-790884dc7962" />
