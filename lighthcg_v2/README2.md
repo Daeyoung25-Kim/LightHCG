@@ -34,9 +34,12 @@ This is the source code of LightHCG_v2, which incorporates a different downstrea
 </p>
 
 *Downstream Model exhibits 98.57% AUC score with 95.70% F1-score. Considering use of only 167,431(=163,278+4153) parameters (approximately 1% of representative vision AI models), LightHCG_v2 exhibits extreme performance in both glaucoma detection reliability and efficiency. 
+
 <p align="center">
   <img width="540" height="452" alt="image" src="https://github.com/user-attachments/assets/a73f1fd6-4bb8-4a8c-a864-e0b0bc6b96d2" />
 </p>
+
+*Downstream Model Structure: LightHCG encoder + 3-layer DNN (64,32,32 nodes with batch normalization and Elu activation functions, DropOut(0.05) defined between first and second hidden layer)
 
 <p align="center">
   <img width="930" height="355" alt="image" src="https://github.com/user-attachments/assets/c5e11571-a16b-4518-9434-1fab6550c352" />
